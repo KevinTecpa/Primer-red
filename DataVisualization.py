@@ -37,7 +37,7 @@ plt.show()
 test_v=np.reshape(imtest,(784,1)) #La acomodamos como matrix (784,1) para poder usarla en la red
 
 #cargamos nuestra red:
-archivo_lectura = open("red_prueba.pkl",'rb')
+archivo_lectura = open("red_prueba1.pkl",'rb')
 net = pickle.load(archivo_lectura)
 archivo_lectura.close()
 
@@ -55,3 +55,4 @@ print(a1)
 max = np.where(a1 == np.amax(a1))
 print("La red reconoce la imagen como un:")
 print(max[0])
+
